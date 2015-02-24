@@ -1,0 +1,30 @@
+{
+  "name": "buildinggruntwatch",
+  "version": "1.0.0",
+  "description": "First grunt watch build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesrico/buildinggruntwatch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesrico/buildinggruntwatch/issues"
+  },
+  "homepage": "https://github.com/jamesrico/buildinggruntwatch",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.18.0",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}
