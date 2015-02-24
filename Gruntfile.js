@@ -40,10 +40,17 @@ module.exports = function (grunt) {
         files: ['app/**/*.{sass,scss}'],
         tasks: ['sass']
       }
-    }
-  });
-
+    },
+    autoprefixer: {
+      dist: {
+        files: {
+          'public/css/main.css': 'app/styles/main.scss'
+        }
+      }
+    },
+  })
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.registerTask('default', []);
   grunt.registerTask('build', ['clean', 'copy', 'jade', 'sass']);
   grunt.registerTask('serve', ['build', 'watch']);
-};
+}
